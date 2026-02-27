@@ -1,0 +1,311 @@
+Part 2A:
+terminal@terminal-temple ~ $ pwd
+/home/terminal
+terminal@terminal-temple ~ $ ls
+Documents       Downloads       Music           Pictures
+terminal@terminal-temple ~ $ mkdir Classes
+terminal@terminal-temple ~ $ pwd
+/home/terminal
+terminal@terminal-temple ~ $ cd Classes
+terminal@terminal-temple Classes $ pwd
+/home/terminal/Classes
+terminal@terminal-temple Classes $ mkdir HRE4M1
+terminal@terminal-temple Classes $ mkdir MCV4U1
+terminal@terminal-temple Classes $ mkdir SPH4U1
+terminal@terminal-temple Classes $ mkdir TEJ4M1
+terminal@terminal-temple Classes $ ls
+HRE4M1          MCV4U1          SPH4U1          TEJ4M1
+terminal@terminal-temple Classes $ cd ..
+terminal@terminal-temple ~ $ cd Music
+terminal@terminal-temple Music $ mkdir Weeknd
+terminal@terminal-temple Music $ mkdir Rihanna
+terminal@terminal-temple Music $ mkdir “Frank Ocean”
+terminal@terminal-temple Music $ mkdir “Katy Perry”
+terminal@terminal-temple Music $ mkdir “Tyler the Creator”
+terminal@terminal-temple Music $ mkdir Sampha
+terminal@terminal-temple Music $ mkdir Kanye
+terminal@terminal-temple Music $ mkdir “Alessia Cara”
+terminal@terminal-temple Music $ mkdir “Post Malone”
+terminal@terminal-temple Music $ mkdir “Mac DeMarco”
+terminal@terminal-temple Music $ cd ..
+terminal@terminal-temple ~ $ cd Pictures
+terminal@terminal-temple Pictures $ mkdir Quebec
+terminal@terminal-temple Pictures $ mkdir Germany
+terminal@terminal-temple Pictures $ cd ..
+terminal@terminal-temple ~ $ cd Movies
+cd: no such file or directory: Movies
+terminal@terminal-temple ~ $ cd Movie
+cd: no such file or directory: Movie
+terminal@terminal-temple ~ $ mkdir Movies
+terminal@terminal-temple ~ $ cd Movies
+terminal@terminal-temple Movies $ mkdir Big Hero 6
+terminal@terminal-temple Movies $ rm Big Hero 6
+rm: Big: is a directory
+terminal@terminal-temple Movies $ ls
+Big
+terminal@terminal-temple Movies $ rm Big
+rm: Big: is a directory
+terminal@terminal-temple Movies $ ls
+Big
+terminal@terminal-temple Movies $ rm -r Big
+terminal@terminal-temple Movies $ ls
+terminal@terminal-temple Movies $ mkdir Big Hero 6 (2014)
+terminal@terminal-temple Movies $ mkdir Zootopia (2016)
+terminal@terminal-temple Movies $ mkdir Mr. Peabody & Sherman (2014)
+terminal@terminal-temple Movies $ mkdir Parasite (2019)
+terminal@terminal-temple Movies $ mkdir inside Out (2015)
+terminal@terminal-temple Movies $ ls
+Big             inside          Mr.             Parasite        Zootopia
+terminal@terminal-temple Movies $ rm Movies
+rm: Movies: No such file or directory
+terminal@terminal-temple Movies $ cd ..
+terminal@terminal-temple ~ $ rm Movies
+rm: Movies: is a directory
+terminal@terminal-temple ~ $ rm -r Movies
+terminal@terminal-temple ~ $ ls
+Classes         Documents       Downloads       Music           Pictures
+terminal@terminal-temple ~ $ mkdir Movies
+terminal@terminal-temple ~ $ cd Movies
+terminal@terminal-temple Movies $ mkdir "Big Hero 6 (2014)"
+terminal@terminal-temple Movies $ ls
+Big Hero 6 (2014)
+terminal@terminal-temple Movies $ mkdir "Zootopia (2016)"
+terminal@terminal-temple Movies $ mkdir "Mr. Peabody & Sherman (2014)"
+terminal@terminal-temple Movies $ mkdir "Parasite (2019)"
+terminal@terminal-temple Movies $ mkdir "Inside Out (2015)"
+terminal@terminal-temple Movies $ cd ..
+terminal@terminal-temple ~ $ ls- la
+Unsupported command: ls-
+terminal@terminal-temple ~ $ ls -la
+total 8
+drwxr-xr-x   8 terminal  staff  256 Feb 26 11:25 AM .
+drwxr-xr-x   3 terminal  staff   96 Feb 26 11:25 AM ..
+drwxr-xr-x   6 terminal  staff  192 Feb 26 11:28 AM Classes
+drwxr-xr-x   5 terminal  staff  160 Feb 26 11:25 AM Documents
+drwxr-xr-x   3 terminal  staff   96 Feb 26 11:25 AM Downloads
+drwxr-xr-x   7 terminal  staff  224 Feb 26 12:37 PM Movies
+drwxr-xr-x  12 terminal  staff  384 Feb 26 11:25 AM Music
+drwxr-xr-x   4 terminal  staff  128 Feb 26 11:25 AM Pictures
+terminal@terminal-temple ~ $ tree
+Unsupported command: tree
+terminal@terminal-temple ~ $ 
+terminal@terminal-temple ~ $ 
+terminal@terminal-temple ~ $ 
+
+
+Part 2B:
+Terminal Temple
+
+Online UNIX terminal simulator (bash, shell, zsh - Linux, Mac, BSD)
+
+Copyright © 2023 Niklas Wenzel (Imprint | Privacy Policy)
+
+Start typing your commands into the command line / console.To print available commands, type "help" and press Enter.
+
+Learn how to use the terminal.
+
+terminal@terminal-temple ~ $ ls
+Classes         Downloads       Music
+Documents       Movies          Pictures
+terminal@terminal-temple ~ $ cd Classes
+terminal@terminal-temple Classes $ ls
+HRE4M1          MCV4U1          SPH4U1          TEJ4M1
+terminal@terminal-temple Classes $ cd ..
+terminal@terminal-temple ~ $ cd Documents
+terminal@terminal-temple Documents $ ls
+empty-file.txt                 plan-for-world-domination.txt
+terminal@terminal-temple Documents $ cat plan-for-world-domination.txt
+1. Gather a team of highly trained hamsters.
+2. Train the hamsters in advanced tactics and strategy.
+3. Outfit the hamsters with tiny suits of armor and laser guns.
+4. Use the hamsters to infiltrate the governments of major world powers.
+terminal@terminal-temple Documents $ ls -la
+total 4
+drwxr-xr-x  5 terminal  staff  160 Feb 26 11:25 AM .
+drwxr-xr-x  8 terminal  staff  256 Feb 26 11:25 AM ..
+drwxr-xr-x  3 terminal  staff   96 Feb 26 11:25 AM .cryptoKeys
+-rwxr--r--  1 terminal  staff    0 Feb 26 11:25 AM empty-file.txt
+-rwxr--r--  1 terminal  staff  238 Feb 26 11:25 AM plan-for-world-domination.txt
+terminal@terminal-temple Documents $ cd cryptoKeys
+cd: no such file or directory: cryptoKeys
+terminal@terminal-temple Documents $ cat .cryptoKeys
+cat: .cryptoKeys: Is a directory
+terminal@terminal-temple Documents $ cd .cryptoKeys
+terminal@terminal-temple .cryptoKeys $ cat .cryptoKeys
+cat: .cryptoKeys: No such file or directory
+terminal@terminal-temple .cryptoKeys $ vi cryptoKeys
+Unsupported command: vi
+terminal@terminal-temple .cryptoKeys $ cd ..
+terminal@terminal-temple Documents $ cat .cryptoKeys
+cat: .cryptoKeys: Is a directory
+terminal@terminal-temple Documents $ cat BEGIN PGP PUBLIC KEY BLOCK.cryptKeys
+cat: BEGIN: No such file or directory
+terminal@terminal-temple Documents $ ls
+empty-file.txt                 plan-for-world-domination.txt
+terminal@terminal-temple Documents $ cat empty-file.txt
+terminal@terminal-temple Documents $ cd .cryptoKeys
+terminal@terminal-temple .cryptoKeys $ ls
+wallet.txt
+terminal@terminal-temple .cryptoKeys $ cat wallet.txt
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: ABAF 11C6 5A29 70B1 30AB  E3C4 79BE 3E43 0041 1886
+
+xsBNBE55CJIBCACkn+aOLmsaq1ejUcXCAOXkO3w7eiLqjR/ziTL2KZ30p7bxP8cT
+UXvfM7fwE7EnqCCkji25x2xsoKXB8AlUswIEYUFCOupj2BOsVmJ/rKZW7fCvKTOK
++BguKjebDxNbgmif39bfSnHDWrW832f5HrYmZn7a/VySDQFdul8Gl/R6gs6PHJbg
+jjt+K7Px6cQVMVNvY/VBWdvA1zckO/4h6gf3kWWZN+Wlq8wv/pxft8QzNFgweH9o
+5bj4tnQ+wMCLCLiDsgEuVawoOAkg3dRMugIUoiKoBKw7b21q9Vjp4jezRvciC6Ys
+4kGUSFG1ZjIn3MpY3f3xZ3yuYwrxQ8JcA7KTABEBAAHOwE0ETnkIkgEIAN+ybgD0
+IlgKRPJ3eksafd+KORseBWwxUy3GH0yAg/4jZCsfHZ7jpbRKzxNTKW1kE6ClSqeh
+UsuXT5Vc1eh6079erN3y+JNxl6zZPC9v+5GNyc28qSfNejt4wmwa/y86T7oQfgo7
+7o8Gu/aO/xzOjw7jSDDR3u9p/hFVtsqzptxZzvs3hVaiLS+0mar9qYZheaCUqOXO
+KVo38Vg5gkOhMEwKvZs9x3fINU/t8ckxOHq6KiLap5Bq87XP0ZJsCaMBwdLYhOFx
+AiEVtlzwyo3DvMplIahqqNELb71YDhpMq/Hu+42oR3pqASCPLfO/0GUSdAGXJVhv
+7L7ng02ETSBmVOUAEQEAAcLAdgQYAQIACQUCTnkIkgIbDAAhCRB5vj5DAEEYhhYh
+BKuvEcZaKXCxMKvjxHm+PkMAQRiG6hsH/0WLUZUbmqc+rXhLRYpgRbc3z3Uvfstp
+eYOH3vuv+PZ3Jk6hgiJXivHprq6uGr1RtyA3D+R7TVM0zjLsSFb+UWfElBdIyN2x
+cZxv0fBR68OTYUxXWH2CQcuWpFSVOmNV1DBMH3Ax3htaFmzHJtOcaHqjx0LAERoY
+2wexIFg7zU5etMT99xkSAoJ4pbbF0pGJrO7oy7lYtTqAHLac5zqgvbMolmMAJ+WV
+DMHHn7rPY3hKPQkE6hvPhFHYksSUwRyQxt2pshL5z6fTYi0yYI5GBqR/viT5MRtp
+nHdlNUeeG+pCpqdnPWLgjkjAcnGRSxgt12BivKVkf4zA0OUHm7cjXfw=
+=HpqG
+-----END PGP PUBLIC KEY BLOCK-----
+terminal@terminal-temple .cryptoKeys $ cd ..
+terminal@terminal-temple Documents $ cd ..
+terminal@terminal-temple ~ $ ls
+Classes         Downloads       Music
+Documents       Movies          Pictures
+terminal@terminal-temple ~ $ cd Downloads
+terminal@terminal-temple Downloads $ ls
+terminal@terminal-temple Downloads $ ls -la
+total 3
+drwxr-xr-x  3 terminal  staff   96 Feb 26 11:25 AM .
+drwxr-xr-x  8 terminal  staff  256 Feb 26 11:25 AM ..
+-rwxr--r--  1 terminal  staff  142 Feb 26 11:25 AM .biggest-secret.txt
+terminal@terminal-temple Downloads $ cat .biggest-secret.txt
+My pasta recipe
+===============
+
+1. Boil water.
+2. Add pasta.
+3. Add sauce.
+4. Add cheese.
+5. Add salt and pepper.
+6. Stir.
+7. Serve.
+
+Yummy!
+terminal@terminal-temple Downloads $ cd ..
+terminal@terminal-temple ~ $ mkdir Hacking
+terminal@terminal-temple ~ $ cd Hacking
+terminal@terminal-temple Hacking $ touch money.txt
+terminal@terminal-temple Hacking $ echo ""
+terminal@terminal-temple Hacking $ echo "-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: ABAF 11C6 5A29 70B1 30AB  E3C4 79BE 3E43 0041 1886
+
+xsBNBE55CJIBCACkn+aOLmsaq1ejUcXCAOXkO3w7eiLqjR/ziTL2KZ30p7bxP8cT
+UXvfM7fwE7EnqCCkji25x2xsoKXB8AlUswIEYUFCOupj2BOsVmJ/rKZW7fCvKTOK
++BguKjebDxNbgmif39bfSnHDWrW832f5HrYmZn7a/VySDQFdul8Gl/R6gs6PHJbg
+jjt+K7Px6cQVMVNvY/VBWdvA1zckO/4h6gf3kWWZN+Wlq8wv/pxft8QzNFgweH9o
+5bj4tnQ+wMCLCLiDsgEuVawoOAkg3dRMugIUoiKoBKw7b21q9Vjp4jezRvciC6Ys
+4kGUSFG1ZjIn3MpY3f3xZ3yuYwrxQ8JcA7KTABEBAAHOwE0ETnkIkgEIAN+ybgD0
+IlgKRPJ3eksafd+KORseBWwxUy3GH0yAg/4jZCsfHZ7jpbRKzxNTKW1kE6ClSqeh
+UsuXT5Vc1eh6079erN3y+JNxl6zZPC9v+5GNyc28qSfNejt4wmwa/y86T7oQfgo7
+7o8Gu/aO/xzOjw7jSDDR3u9p/hFVtsqzptxZzvs3hVaiLS+0mar9qYZheaCUqOXO
+KVo38Vg5gkOhMEwKvZs9x3fINU/t8ckxOHq6KiLap5Bq87XP0ZJsCaMBwdLYhOFx
+AiEVtlzwyo3DvMplIahqqNELb71YDhpMq/Hu+42oR3pqASCPLfO/0GUSdAGXJVhv
+7L7ng02ETSBmVOUAEQEAAcLAdgQYAQIACQUCTnkIkgIbDAAhCRB5vj5DAEEYhhYh
+BKuvEcZaKXCxMKvjxHm+PkMAQRiG6hsH/0WLUZUbmqc+rXhLRYpgRbc3z3Uvfstp
+eYOH3vuv+PZ3Jk6hgiJXivHprq6uGr1RtyA3D+R7TVM0zjLsSFb+UWfElBdIyN2x
+cZxv0fBR68OTYUxXWH2CQcuWpFSVOmNV1DBMH3Ax3htaFmzHJtOcaHqjx0LAERoY
+2wexIFg7zU5etMT99xkSAoJ4pbbF0pGJrO7oy7lYtTqAHLac5zqgvbMolmMAJ+WV
+DMHHn7rPY3hKPQkE6hvPhFHYksSUwRyQxt2pshL5z6fTYi0yYI5GBqR/viT5MRtp
+nHdlNUeeG+pCpqdnPWLgjkjAcnGRSxgt12BivKVkf4zA0OUHm7cjXfw=
+=HpqG" >> money.txt
+terminal@terminal-temple Hacking $ cat money.txt
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: ABAF 11C6 5A29 70B1 30AB  E3C4 79BE 3E43 0041 1886
+
+xsBNBE55CJIBCACkn+aOLmsaq1ejUcXCAOXkO3w7eiLqjR/ziTL2KZ30p7bxP8cT
+UXvfM7fwE7EnqCCkji25x2xsoKXB8AlUswIEYUFCOupj2BOsVmJ/rKZW7fCvKTOK
++BguKjebDxNbgmif39bfSnHDWrW832f5HrYmZn7a/VySDQFdul8Gl/R6gs6PHJbg
+jjt+K7Px6cQVMVNvY/VBWdvA1zckO/4h6gf3kWWZN+Wlq8wv/pxft8QzNFgweH9o
+5bj4tnQ+wMCLCLiDsgEuVawoOAkg3dRMugIUoiKoBKw7b21q9Vjp4jezRvciC6Ys
+4kGUSFG1ZjIn3MpY3f3xZ3yuYwrxQ8JcA7KTABEBAAHOwE0ETnkIkgEIAN+ybgD0
+IlgKRPJ3eksafd+KORseBWwxUy3GH0yAg/4jZCsfHZ7jpbRKzxNTKW1kE6ClSqeh
+UsuXT5Vc1eh6079erN3y+JNxl6zZPC9v+5GNyc28qSfNejt4wmwa/y86T7oQfgo7
+7o8Gu/aO/xzOjw7jSDDR3u9p/hFVtsqzptxZzvs3hVaiLS+0mar9qYZheaCUqOXO
+KVo38Vg5gkOhMEwKvZs9x3fINU/t8ckxOHq6KiLap5Bq87XP0ZJsCaMBwdLYhOFx
+AiEVtlzwyo3DvMplIahqqNELb71YDhpMq/Hu+42oR3pqASCPLfO/0GUSdAGXJVhv
+7L7ng02ETSBmVOUAEQEAAcLAdgQYAQIACQUCTnkIkgIbDAAhCRB5vj5DAEEYhhYh
+BKuvEcZaKXCxMKvjxHm+PkMAQRiG6hsH/0WLUZUbmqc+rXhLRYpgRbc3z3Uvfstp
+eYOH3vuv+PZ3Jk6hgiJXivHprq6uGr1RtyA3D+R7TVM0zjLsSFb+UWfElBdIyN2x
+cZxv0fBR68OTYUxXWH2CQcuWpFSVOmNV1DBMH3Ax3htaFmzHJtOcaHqjx0LAERoY
+2wexIFg7zU5etMT99xkSAoJ4pbbF0pGJrO7oy7lYtTqAHLac5zqgvbMolmMAJ+WV
+DMHHn7rPY3hKPQkE6hvPhFHYksSUwRyQxt2pshL5z6fTYi0yYI5GBqR/viT5MRtp
+nHdlNUeeG+pCpqdnPWLgjkjAcnGRSxgt12BivKVkf4zA0OUHm7cjXfw=
+=HpqG
+terminal@terminal-temple Hacking $ touch blackmail.txt
+terminal@terminal-temple Hacking $ echo "My pasta recipe
+===============
+
+1. Boil water.
+2. Add pasta.
+3. Add sauce.
+4. Add cheese.
+5. Add salt and pepper.
+6. Stir.
+7. Serve.
+
+Yummy!" >> blackmail.txt
+terminal@terminal-temple Hacking $ cat blackmail.txt
+My pasta recipe
+===============
+
+1. Boil water.
+2. Add pasta.
+3. Add sauce.
+4. Add cheese.
+5. Add salt and pepper.
+6. Stir.
+7. Serve.
+
+Yummy!
+terminal@terminal-temple Hacking $ find ~/
+~//
+~//Classes
+~//Classes/HRE4M1
+~//Classes/MCV4U1
+~//Classes/SPH4U1
+~//Classes/TEJ4M1
+~//Documents
+~//Documents/.cryptoKeys
+~//Documents/.cryptoKeys/wallet.txt
+~//Documents/empty-file.txt
+~//Documents/plan-for-world-domination.txt
+~//Downloads
+~//Downloads/.biggest-secret.txt
+~//Hacking
+~//Hacking/blackmail.txt
+~//Hacking/money.txt
+~//Movies
+~//Movies/Big Hero 6 (2014)
+~//Movies/Inside Out (2015)
+~//Movies/Mr. Peabody & Sherman (2014)
+~//Movies/Parasite (2019)
+~//Movies/Zootopia (2016)
+~//Music
+~//Music/Alessia Cara
+~//Music/Frank Ocean
+~//Music/Kanye
+~//Music/Katy Perry
+~//Music/Mac DeMarco
+~//Music/Post Malone
+~//Music/Rihanna
+~//Music/Sampha
+~//Music/Tyler The Creator
+~//Music/Weeknd
+~//Pictures
+~//Pictures/Germany
+~//Pictures/Quebec
+terminal@terminal-temple Hacking $
